@@ -1,0 +1,29 @@
+{
+  "type": "solver_question",
+  "question_id": "question_009",
+  "target_npc": "마진우",
+  "attached_evidence": [
+    "E03",
+    "E04"
+  ],
+  "grounding_note": "근거: E03의 F_E03_CARD_2132는 21:32:14 마진우 명의 카드로 서버실에 출입한 사실을 보여준다. E04의 F_E04_USB_2136과 F_E04_DEVICE_SERIAL은 21:36:02~21:39:11 마진우 사용자 세션에 외장 SSD XSSD-4421이 연결된 사실을 보여준다. 연결 관계: 서버실 출입 직후 마진우 세션에 특정 외장 SSD가 연결되었으므로, 해당 장치에 접근·복사된 데이터의 종류와 파일명을 확인한다.",
+  "relation": "actor_device_sequence",
+  "fact_links": [
+    {
+      "evidence_id": "E03",
+      "fact_id": "F_E03_CARD_2132",
+      "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+    },
+    {
+      "evidence_id": "E04",
+      "fact_id": "F_E04_USB_2136",
+      "claim": "21:36 마진우 사용자 세션의 운영 PC에 외장 SSD가 연결되었다."
+    },
+    {
+      "evidence_id": "E04",
+      "fact_id": "F_E04_DEVICE_SERIAL",
+      "claim": "연결 장치 일련번호는 XSSD-4421이다."
+    }
+  ],
+  "question": "E03에 따르면 당신은 21:32:14에 서버실에 들어갔고, E04에는 21:36:02부터 21:39:11까지 당신의 운영 PC 세션에 외장 SSD XSSD-4421이 연결되어 있습니다. 그 시간 동안 외장 SSD에 접근하거나 복사한 파일 또는 데이터의 정확한 종류와 파일명을 알려주시겠습니까?"
+}

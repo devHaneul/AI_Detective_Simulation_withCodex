@@ -1,0 +1,1 @@
+{"question_id":"question_013","classification":"insufficient_grounding","answer":"정산 요청과 출입 기록만으로 서버실 출입이 추가 현장비와 관련됐다고 볼 근거는 없습니다. 두 사실의 관련 여부는 제시된 정보만으로 판단할 수 없습니다.","matched_rule_id":null,"rationale":"선택 가능 규칙이 없고, E02의 정산 요청과 E03의 출입 기록 사이에 추가 현장비와 서버실 작업을 연결하는 공개 사실이 없다. actor_device_sequence에 필요한 장치 연결 사실도 제시되지 않았다."}

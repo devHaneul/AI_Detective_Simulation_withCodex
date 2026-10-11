@@ -1,0 +1,41 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_008",
+  "in_reply_to": "question_008",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "먼저 퇴근한다고 말한 뒤 21시 32분에 다시 서버실로 들어간 것은 맞습니다. 제 출입카드를 다른 사람에게 빌려준 것은 아닙니다.",
+    "classification": "fact_confirmed",
+    "established_facts": [
+      "F_MJ_REENTERED_AFTER_CLAIMED_EXIT"
+    ]
+  },
+  "newly_unlocked_evidence": [
+    {
+      "id": "E04",
+      "title": "운영 PC 외장장치 로그",
+      "content": "# E04 — 운영 PC 외장장치 로그\n\n- PC: OPS-PC-03\n- 활성 사용자 세션: **마진우**\n- 장치 연결 시각: **21:36:02**\n- 장치 유형: 외장 SSD\n- 일련번호: **XSSD-4421**\n- 제거 시각: 21:39:11\n\n",
+      "public_facts": [
+        {
+          "id": "F_E04_USB_2136",
+          "statement": "21:36 마진우 사용자 세션의 운영 PC에 외장 SSD가 연결되었다."
+        },
+        {
+          "id": "F_E04_DEVICE_SERIAL",
+          "statement": "연결 장치 일련번호는 XSSD-4421이다."
+        }
+      ]
+    }
+  ],
+  "system_notification": "새 증거 E04가 공개되었습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ]
+  }
+}

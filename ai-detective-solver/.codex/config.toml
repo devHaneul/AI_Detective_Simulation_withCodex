@@ -1,0 +1,4 @@
+# Solver workspace only: use the documented restricted fallback because the
+# elevated Windows sandbox cannot write workspace files on this machine.
+[windows]
+sandbox = "unelevated"

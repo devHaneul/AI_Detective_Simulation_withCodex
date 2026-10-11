@@ -1,0 +1,38 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_009",
+  "in_reply_to": "question_009",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "서버실에 들어간 직후 제 계정으로 열린 촬영 PC에 외장 SSD를 연결한 것은 맞습니다. 다만 무엇을 했는지에 대해서는 이 질문 범위에서 더 덧붙이지 않겠습니다.",
+    "classification": "fact_confirmed",
+    "established_facts": [
+      "F_MJ_ACKNOWLEDGED_DEVICE"
+    ]
+  },
+  "newly_unlocked_evidence": [
+    {
+      "id": "E05",
+      "title": "파일 복사 감사 로그",
+      "content": "# E05 — 파일 복사 감사 로그\n\n- 원본: `D:\\competition\\final_dataset.zip`\n- 대상 장치: **XSSD-4421**\n- 복사 시작: **21:38:04**\n- 복사 완료: 21:38:19\n- 파일 해시 검증: 원본과 대상 일치\n\n",
+      "public_facts": [
+        {
+          "id": "F_E05_DATASET_COPY",
+          "statement": "21:38 final_dataset.zip이 XSSD-4421로 복사되었다."
+        }
+      ]
+    }
+  ],
+  "system_notification": "새 증거 E05가 공개되었습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05"
+    ]
+  }
+}

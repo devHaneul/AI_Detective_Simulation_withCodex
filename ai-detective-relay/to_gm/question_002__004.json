@@ -1,0 +1,24 @@
+{
+  "type": "solver_question",
+  "question_id": "question_002",
+  "target_npc": "김민수",
+  "attached_evidence": [
+    "E02",
+    "E03"
+  ],
+  "grounding_note": "E02의 21시 전 퇴근 발언과 E03의 21:32:14 서버실 출입 기록이 시간상 모순된다. 시설 보안 담당에게 출입 목적과 서버실·CCTV에서 확인된 행위를 확인한다.",
+  "relation": "actor_device_sequence",
+  "fact_links": [
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_LEFT_BEFORE_21",
+      "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+    },
+    {
+      "evidence_id": "E03",
+      "fact_id": "F_E03_CARD_2132",
+      "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+    }
+  ],
+  "question": "E02에서 마진우는 21시 전에 퇴근한다고 말했지만, E03의 정상적인 출입통제 기록에는 21:32:14에 마진우 명의 카드로 서버실 동쪽 문이 열렸습니다. 이 시간 모순과 관련해, 당시 마진우의 서버실 출입 목적은 무엇이었고 서버실 안에서 어떤 출입·CCTV 정황 또는 작업이 확인되었습니까?"
+}

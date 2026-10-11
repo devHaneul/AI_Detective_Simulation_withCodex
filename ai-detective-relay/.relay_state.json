@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "delivered": {
+    "gm_to_solver/initial_packet.json": {
+      "sha256": "ed0cd71edbb03dcd23e455e789f112e275fc337adb07974d32fa8c5adfb2497b",
+      "mtime_ns": 1791194146412086200,
+      "file_id": 6192449487650151
+    },
+    "solver_to_gm/question_001.json": {
+      "sha256": "2f4cc5b0ec775547b2ec6c5c5d61c0b0510fd0d490a0ebd76154a80d9c58fe6e",
+      "mtime_ns": 1791194205107896800,
+      "file_id": 52072870691487147
+    },
+    "gm_to_solver/gm_response_001.json": {
+      "sha256": "3015f37542cbf93b5c3d1d89142235f9cb03be5c5a4c618311dfc4afa467dffc",
+      "mtime_ns": 1791194227347936300,
+      "file_id": 23080948090289552
+    },
+    "solver_to_gm/question_002.json": {
+      "sha256": "3fc780a587398b009fb7943f41b950e6648bed3b3f944b3bc09fb1b0e0b13837",
+      "mtime_ns": 1791194253776188700,
+      "file_id": 43065671436746177
+    },
+    "gm_to_solver/gm_response_002.json": {
+      "sha256": "89c71b02fb92289ad7a54640cbb4a2941482dde5476f1e087b4d1090424f5125",
+      "mtime_ns": 1791194281187381000,
+      "file_id": 6755399441071552
+    },
+    "solver_to_gm/question_003.json": {
+      "sha256": "4fa899dd7111846ae0694e6a86fc0f66b79b5d7acab27a756024a7b7e01958f5",
+      "mtime_ns": 1791194300580787300,
+      "file_id": 23643898043710938
+    },
+    "gm_to_solver/gm_response_003.json": {
+      "sha256": "e0cbad5573644b58239ceaf662b9934347745f37b805ea7f5624adb97997d7ff",
+      "mtime_ns": 1791194327280809800,
+      "file_id": 61080069946228157
+    },
+    "solver_to_gm/question_004.json": {
+      "sha256": "74049c604449f79a0fdd913451ffa7b48160b028491d8de4ceee7e3489dbe3dc",
+      "mtime_ns": 1791194340312304800,
+      "file_id": 27866022694370791
+    },
+    "gm_to_solver/gm_response_004.json": {
+      "sha256": "d15ce4e43e2b789f9c914173732a2ee2658b6dc75f5a401c7e169ab51d51af12",
+      "mtime_ns": 1791194363540092700,
+      "file_id": 26177172834106832
+    },
+    "solver_to_gm/question_005.json": {
+      "sha256": "a7a7ccf983e91c5734f4677e1d793bef35cb55c16087317be20744f8fa2caa05",
+      "mtime_ns": 1791194430574653600,
+      "file_id": 20266198323183085
+    },
+    "gm_to_solver/gm_response_005.json": {
+      "sha256": "6bd5c1f0f6a5272507425f0cf6a826de4f68638533caa1755ae75f8909152307",
+      "mtime_ns": 1791194491724484600,
+      "file_id": 9288674231467488
+    },
+    "solver_to_gm/question_006.json": {
+      "sha256": "c0d38c5958caab50087a836ffe221ff17a011e5c1a55e358c572ea533ffa46ff",
+      "mtime_ns": 1791194636794177700,
+      "file_id": 41376821576482297
+    },
+    "gm_to_solver/gm_response_006.json": {
+      "sha256": "e8a88548665b86951e100c868c706d6eecdcc58213459a962dcd0a956d4732ee",
+      "mtime_ns": 1791194664673025700,
+      "file_id": 44754521297010146
+    },
+    "solver_to_gm/question_007.json": {
+      "sha256": "fa1734be2b56b308cd10ff5d6861e14e4a1434aaec432d851d5f533e33f7a84e",
+      "mtime_ns": 1791194741812312400,
+      "file_id": 22517998136868362
+    },
+    "gm_to_solver/gm_response_007.json": {
+      "sha256": "5d26e44438426c422f40cbe8220009229216aaf78d7d580db5194daa6f8feaee",
+      "mtime_ns": 1791194769939368000,
+      "file_id": 19421773393051127
+    },
+    "solver_to_gm/question_008.json": {
+      "sha256": "1c8bc13d6db49859520362b89375dbca1c4bfc6e0c4a2d790db6d24bf0de2083",
+      "mtime_ns": 1791194845922372600,
+      "file_id": 35184372088847883
+    },
+    "gm_to_solver/gm_response_008.json": {
+      "sha256": "a1d59dfa4d028f91b1202f29ee3d83e0a44e488914efabf458f7bdaa1851abcf",
+      "mtime_ns": 1791194871816439900,
+      "file_id": 2251799813701126
+    },
+    "solver_to_gm/question_009.json": {
+      "sha256": "7e3e4c0da95e2a519086f2a78d284451df022d5dc5ab0f53362950529d6cd86f",
+      "mtime_ns": 1791194894686312700,
+      "file_id": 7599824371203618
+    },
+    "gm_to_solver/gm_response_009.json": {
+      "sha256": "9b376ee19a6313575d20c5c0fe004b81230f6220eb94e3da6372b774180eb9f9",
+      "mtime_ns": 1791194915806856000,
+      "file_id": 39125021762797072
+    },
+    "solver_to_gm/question_010.json": {
+      "sha256": "d0b3d6a9ee34ab00c272e50b1912e2c4aa01b775aca059fa0eb5407027d546fc",
+      "mtime_ns": 1791194987540313900,
+      "file_id": 108649341010394124
+    },
+    "gm_to_solver/gm_response_010.json": {
+      "sha256": "d970986d28f2ef99019b525f8a967dd60d5384d5339c09552d45bd4a49fcfd45",
+      "mtime_ns": 1791195015421971000,
+      "file_id": 4503599627386397
+    },
+    "solver_to_gm/question_011.json": {
+      "sha256": "ea2836a49b9eed00912ee96ad60959ee7268d99cb41d6078717e5f4aa95ef6f8",
+      "mtime_ns": 1791195114078429400,
+      "file_id": 133982088914305312
+    },
+    "gm_to_solver/gm_response_011.json": {
+      "sha256": "5dfa6620dbeb1536c01d95f205b054e83f2c699734dc23cb671ee5579f1a037e",
+      "mtime_ns": 1791195136806407500,
+      "file_id": 11821949021863459
+    },
+    "solver_to_gm/question_012.json": {
+      "sha256": "f485d0083c97f95204b0e88738ae2362c98b4b9e2a8b2188f9cbae651314638f",
+      "mtime_ns": 1791195196079860100,
+      "file_id": 40250921669722718
+    },
+    "gm_to_solver/gm_response_012.json": {
+      "sha256": "13fb18578fab7d9c7f30c075afc52bfb1da961f8e91a6db6ef8cfdc7e6560ede",
+      "mtime_ns": 1791195215828700100,
+      "file_id": 22517998136951348
+    },
+    "solver_to_gm/question_013.json": {
+      "sha256": "b0213c742692802d969217cf839bea6033e9cf6563233efe5ca42d68553e43c9",
+      "mtime_ns": 1791195235976507500,
+      "file_id": 26177172834189926
+    },
+    "gm_to_solver/gm_response_013.json": {
+      "sha256": "c23bee5aa1d90aabe0565f7ee18790197e404774ecc331eda63c106e2ed6c3d1",
+      "mtime_ns": 1791195256053304000,
+      "file_id": 9570149208261208
+    },
+    "solver_to_gm/question_014.json": {
+      "sha256": "4f8a071385ae39ca3200c90f2f74d5164233b3ce86c92f65db58d96872c7d048",
+      "mtime_ns": 1791195266122229000,
+      "file_id": 22236523160240759
+    },
+    "gm_to_solver/gm_response_014.json": {
+      "sha256": "2f4d24c62ce19b0a1d69aaa84b79788043d2c7c85a23c8de2f6719e77f949a02",
+      "mtime_ns": 1791195287206719500,
+      "file_id": 7599824371286629
+    },
+    "solver_to_gm/question_015.json": {
+      "sha256": "129fb90635c08d6e4eac1e44daed2f7a902e0123187d48b6a626d64cf769a06c",
+      "mtime_ns": 1791195296078301000,
+      "file_id": 4503599627469472
+    },
+    "gm_to_solver/gm_response_015.json": {
+      "sha256": "3a321c7cb8cba41e363266c415968d4445a4e315c40b73acfa4fccca9ee2887d",
+      "mtime_ns": 1791195376797444100,
+      "file_id": 2814749767205490
+    },
+    "solver_to_gm/question_016.json": {
+      "sha256": "6f3c0b3259279a3a4ed0e867d613ee00f81bfbe14e300d33da0a5d2a20e22e97",
+      "mtime_ns": 1790963266072764700,
+      "file_id": 95138542128254334
+    },
+    "gm_to_solver/gm_response_016.json": {
+      "sha256": "90ab6b96ccd0024a31f3daef76b89ede1b005592ab5d76171a45ae66e7d57a6a",
+      "mtime_ns": 1790963315845872900,
+      "file_id": 4785074604097051
+    },
+    "solver_to_gm/question_017.json": {
+      "sha256": "a1e22b820af24904dafe5e88bd6cd341bf86b2695157abb053d6ba765fb0e32e",
+      "mtime_ns": 1790963342568332300,
+      "file_id": 64176294690127885
+    },
+    "gm_to_solver/gm_response_017.json": {
+      "sha256": "dcaa3973bbf360e73db9a5be0b561af7ae7258303af793d4ab4ef2696eb8c6b3",
+      "mtime_ns": 1790963358621757000,
+      "file_id": 1688849860279848
+    },
+    "solver_to_gm/question_018.json": {
+      "sha256": "1eede3bc16f0fb7e0b71495e2dcd0cea59a4ba1111d785a1b8a4982b03cb2383",
+      "mtime_ns": 1790963434797810900,
+      "file_id": 23080948090372693
+    },
+    "gm_to_solver/gm_response_018.json": {
+      "sha256": "bc0936b22f147f43832592ee47a598aa1c708ed1b8edbdc8016e6dc2e8f64b26",
+      "mtime_ns": 1790963450121427600,
+      "file_id": 103019841476163444
+    },
+    "solver_to_gm/question_019.json": {
+      "sha256": "1eea0a78e9884c4f675b0e26a99c53647073c92e69c5c7a1f9f2e713e4d29c6e",
+      "mtime_ns": 1790963528858762700,
+      "file_id": 23643898043794014
+    },
+    "gm_to_solver/gm_response_019.json": {
+      "sha256": "5ba4f867c95b7866ec7689323538b8ed15bd4f3c40b66078f9756ab52ed002f3",
+      "mtime_ns": 1790963548549954800,
+      "file_id": 21673573206819380
+    },
+    "solver_to_gm/question_020.json": {
+      "sha256": "fa47c59bed810a32a3b78933dd8838b480c561035371a4d5536a28b3a5258581",
+      "mtime_ns": 1790963595507062700,
+      "file_id": 15199648742474338
+    },
+    "gm_to_solver/gm_response_020.json": {
+      "sha256": "a7d9b914d604fac071b733c1b4506326f90e094f728035d3d32522abc08a476a",
+      "mtime_ns": 1790963612478648200,
+      "file_id": 7036874417865300
+    },
+    "solver_to_gm/question_021.json": {
+      "sha256": "5f4a2705b3f34e8cc8c5ad6b6e0020b9960469a87783374070efc71c4df84743",
+      "mtime_ns": 1790963645231645100,
+      "file_id": 10696049115103855
+    },
+    "gm_to_solver/gm_response_021.json": {
+      "sha256": "d84303aa37b6a81cff37ef432820ca3f87383293c69d022629f3e1899908d4cb",
+      "mtime_ns": 1790963660262087600,
+      "file_id": 29836347531428441
+    },
+    "solver_to_gm/question_022.json": {
+      "sha256": "b87e494f44b06e8557b98b8126a946442ddcec98338f73861ab209206f79bb33",
+      "mtime_ns": 1790963723803963700,
+      "file_id": 19140298416423543
+    },
+    "gm_to_solver/gm_response_022.json": {
+      "sha256": "28b75bee4f865e6deaafecf5d5c4cd9b3e68ad2df5f3cf240ee5a782c2b27705",
+      "mtime_ns": 1790963735272798400,
+      "file_id": 20266198323266150
+    },
+    "solver_to_gm/question_023.json": {
+      "sha256": "72593ae1cc9c2b8144c8f60772d776b0e21b4769755dc52942409c7fc60655ba",
+      "mtime_ns": 1790963815977324900,
+      "file_id": 23643898043794056
+    },
+    "gm_to_solver/gm_response_023.json": {
+      "sha256": "b94cbbc426d8da8bc83454d9cb9a365f068ae4601a5fbeee94a36c991529a38f",
+      "mtime_ns": 1790963832234514200,
+      "file_id": 6473924464444016
+    },
+    "solver_to_gm/question_024.json": {
+      "sha256": "45cf71bfd537ccb0dcf9e90c45ca4bb41c004a262b4aa021ae175ca00b37010a",
+      "mtime_ns": 1790963878822903600,
+      "file_id": 14636698789053092
+    },
+    "gm_to_solver/gm_response_024.json": {
+      "sha256": "54d92c9bad3f4041e702ccd6fa4ca90595bde71681163c50b998a099a7b5e8ec",
+      "mtime_ns": 1790963891373441800,
+      "file_id": 23080948090372723
+    },
+    "solver_to_gm/question_025.json": {
+      "sha256": "9430a9c47ad494dd8e6eb17a7c25a2ca687da1b7625c7d77c9f222967760341a",
+      "mtime_ns": 1790964028918594800,
+      "file_id": 60798594969600638
+    }
+  },
+  "rejected": {}
+}

@@ -1,0 +1,22 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_006",
+  "in_reply_to": "question_006",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "그 차액의 세부 지출 항목이나 시각, 증빙의 정확한 내용은 기억하지 못합니다. 지금 제시할 수 있는 영수증이나 지출 기록도 없습니다.",
+    "classification": "memory_limitation",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03"
+    ]
+  }
+}

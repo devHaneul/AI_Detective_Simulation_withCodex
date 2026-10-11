@@ -1,0 +1,4 @@
+# GM workspace only: the elevated Windows sandbox cannot write the mutable
+# game state on this machine, so use the documented restricted fallback here.
+[windows]
+sandbox = "unelevated"

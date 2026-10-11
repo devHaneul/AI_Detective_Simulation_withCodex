@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_011",
+  "in_reply_to": "question_011",
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "제시된 퇴근 발언과 카드 기록만으로는 실제 출입자나 카드 사용 경위를 단정할 수 없습니다. 그 부분은 별도의 확인 가능한 기록이 있어야 판단할 수 있습니다.",
+    "classification": "insufficient_grounding",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}

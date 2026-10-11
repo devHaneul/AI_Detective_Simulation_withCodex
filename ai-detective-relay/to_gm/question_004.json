@@ -1,0 +1,24 @@
+{
+  "type": "solver_question",
+  "question_id": "question_004",
+  "target_npc": "김민수",
+  "attached_evidence": [
+    "E01",
+    "E02"
+  ],
+  "grounding_note": "E02에 따르면 마진우는 20:48에 450,000원 정산을 요청했고 20:55 무렵 21시 전에 퇴근한다고 말했다. 해당 시각의 출입·퇴근 확인 사실이 공개되지 않았다.",
+  "relation": "timeline_contradiction",
+  "fact_links": [
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_LEFT_BEFORE_21",
+      "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+    },
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_CLAIM_450K",
+      "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+    }
+  ],
+  "question": "4월 28일 20:48부터 21시 전까지 마진우의 실제 출입 또는 퇴근 시각을 확인할 수 있습니까? 확인 근거가 되는 출입기록이나 CCTV 보존 여부도 알려주십시오."
+}

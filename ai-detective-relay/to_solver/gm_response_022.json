@@ -1,0 +1,25 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_022",
+  "in_reply_to": "question_022",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "그 거래처 계좌를 언제 어떤 경위로 개설·등록했는지와 이번 정산에 사용한 이유의 세부 내용은 정확히 기억하지 못합니다.",
+    "classification": "memory_limitation",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06"
+    ]
+  }
+}

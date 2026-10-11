@@ -1,0 +1,24 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_016",
+  "in_reply_to": "question_016",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "김민수",
+    "answer": "저는 출입 보안 담당이라 XSSD-4421의 회사 등록·배정 여부나 그 등록·배정을 한 사람은 확인하지 못했습니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05"
+    ]
+  }
+}

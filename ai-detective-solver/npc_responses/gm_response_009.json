@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_009",
+  "in_reply_to": "question_009",
+  "npc_response": {
+    "npc": "오세린",
+    "answer": "저는 20시 58분에 퇴근했으며, 이후 결선 자료의 파일 작업 기록이나 보관 위치·접근 권한 변경 내역은 확인하지 못했습니다. 그 기록들에 대해서는 알지 못합니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}

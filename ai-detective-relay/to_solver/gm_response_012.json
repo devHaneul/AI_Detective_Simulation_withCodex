@@ -1,0 +1,24 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_012",
+  "in_reply_to": "question_012",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "오세린",
+    "answer": "저는 그 외장 SSD 연결이나 마진우의 해당 파일 반출 권한을 직접 확인하지 못했습니다. 따라서 정상 절차였는지는 답할 수 없습니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05"
+    ]
+  }
+}

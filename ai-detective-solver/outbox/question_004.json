@@ -1,0 +1,24 @@
+{
+  "type": "solver_question",
+  "question_id": "question_004",
+  "target_npc": "오세린",
+  "attached_evidence": [
+    "E02",
+    "E03"
+  ],
+  "grounding_note": "21시 전 퇴근 발언 이후 서버실 출입 기록과 결선 데이터의 보관·접근 상태를 확인한다.",
+  "relation": "device_file_sequence",
+  "fact_links": [
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_LEFT_BEFORE_21",
+      "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+    },
+    {
+      "evidence_id": "E03",
+      "fact_id": "F_E03_CARD_2132",
+      "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+    }
+  ],
+  "question": "당신의 메모에는 마진우가 20:55 무렵 21시 전에 퇴근한다고 말했다고 되어 있지만, E03에는 21:32:14에 마진우 명의 카드로 서버실 문이 열린 기록이 있습니다. 그 사이 마진우가 결선 데이터나 서버실 작업에 대해 언급한 적이 있었는지, 그리고 당시 결선 데이터의 보관·접근 상태를 알고 계신가요?"
+}

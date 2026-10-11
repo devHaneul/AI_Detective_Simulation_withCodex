@@ -1,0 +1,63 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "initial",
+  "npc_roster": [
+    {
+      "name": "마진우",
+      "role": "대회 운영 회계 담당"
+    },
+    {
+      "name": "장예원",
+      "role": "현장 운영 담당"
+    },
+    {
+      "name": "김민수",
+      "role": "시설 보안 담당"
+    },
+    {
+      "name": "오세린",
+      "role": "대회 콘텐츠 담당"
+    }
+  ],
+  "npc_response": null,
+  "newly_unlocked_evidence": [
+    {
+      "id": "E01",
+      "title": "장비 대여 영수증",
+      "content": "# E01 — 장비 대여 영수증\n\n- 발행처: 한빛렌탈\n- 결제일: 4월 28일 18:10\n- 품목: 빔프로젝터 및 음향 장비 1일 대여\n- 결제액: **150,000원**\n- 결제자: 장예원(법인카드)\n- 영수증 번호: HR-0428-117\n\n",
+      "public_facts": [
+        {
+          "id": "F_E01_ACTUAL_150K",
+          "statement": "4월 28일 장비 대여 실결제액은 150,000원이다."
+        },
+        {
+          "id": "F_E01_VENDOR_REAL",
+          "statement": "실제 결제처는 한빛렌탈이다."
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "마진우의 정산 요청과 퇴근 메모",
+      "content": "# E02 — 정산 요청과 퇴근 메모\n\n전자결재 요청:\n\n- 요청자: 마진우\n- 항목: 4월 28일 행사 장비 및 현장 비용\n- 요청액: **450,000원**\n- 작성 시각: 20:48\n\n오세린의 업무 메모:\n\n- “20:55 무렵 마진우가 오늘은 21시 전에 먼저 퇴근한다고 말함.”\n\n",
+      "public_facts": [
+        {
+          "id": "F_E02_CLAIM_450K",
+          "statement": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+        },
+        {
+          "id": "F_E02_LEFT_BEFORE_21",
+          "statement": "마진우는 21시 전에 퇴근했다고 말했다."
+        }
+      ]
+    }
+  ],
+  "system_notification": "수사가 시작되었습니다. 초기 증거 E01과 E02가 공개되었습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02"
+    ]
+  }
+}

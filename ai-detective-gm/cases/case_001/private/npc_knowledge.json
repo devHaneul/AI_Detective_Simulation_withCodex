@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "npcs": {
+    "마진우": {
+      "role": "대회 운영 회계 담당",
+      "knows": ["자신이 450,000원을 청구함", "21:32 서버실에 재입장함", "외장 SSD를 연결함", "결선 데이터를 복사함"],
+      "does_not_know": ["김민수의 21:40 이후 순찰 동선"],
+      "directly_observed": ["정산 요청서 작성", "서버실 재입장", "외장 SSD 연결과 파일 복사"],
+      "heard_from_others": ["장예원이 장비 대여를 마쳤다는 보고"],
+      "memory_limitations": ["행사장의 다른 소액 지출 세부 항목"],
+      "reveal_conditions": ["공개 증거의 금액 차이 연결", "퇴근 진술과 출입 기록 연결", "출입과 장치 로그 연결", "장치와 파일 감사 로그 연결"],
+      "public_responses": [
+        {"keywords": ["참석", "근무했"], "classification": "known_general", "answer": "네. 4월 28일 대회 운영 업무를 담당했습니다."},
+        {"keywords": ["다른 소액", "세부 항목"], "classification": "memory_limitation", "answer": "행사장의 다른 소액 지출 세부 항목은 정확히 기억나지 않습니다."}
+      ],
+      "unknown_response": "제가 직접 확인하지 않은 내용이라 알 수 없습니다."
+    },
+    "장예원": {
+      "role": "현장 운영 담당",
+      "knows": ["한빛렌탈 장비 대여비가 150,000원임", "영수증을 운영팀에 제출함"],
+      "does_not_know": ["마진우의 정산표 작성 과정", "서버실에서 일어난 일", "외장 SSD 사용자"],
+      "directly_observed": ["장비 수령", "150,000원 법인카드 결제"],
+      "heard_from_others": ["마진우가 정산을 맡았다는 운영팀 공지"],
+      "memory_limitations": ["마진우가 작성한 정산표의 정확한 파일명"],
+      "reveal_conditions": [],
+      "public_responses": [
+        {"keywords": ["참석", "현장"], "classification": "known_general", "answer": "네. 그날 현장 운영을 맡아 참석했습니다."},
+        {"keywords": ["파일명", "settlement.xlsx", "정산표 이름"], "classification": "memory_limitation", "answer": "마진우 씨가 작성한 정산표의 정확한 파일명은 기억나지 않습니다."}
+      ],
+      "unknown_response": "그 부분은 제가 직접 본 것이 아니라 알 수 없습니다."
+    },
+    "김민수": {
+      "role": "시설 보안 담당",
+      "knows": ["출입통제 기록의 보존 방식", "21:40 서버실 복도를 순찰함"],
+      "does_not_know": ["마진우의 정산 금액", "서버실 PC에서 복사된 파일 내용"],
+      "directly_observed": ["21:40 서버실 복도에 사람이 없었음"],
+      "heard_from_others": ["다음 날 운영팀이 데이터 이상을 발견함"],
+      "memory_limitations": ["21:30 이전 복도 통행자 얼굴"],
+      "reveal_conditions": [],
+      "public_responses": [
+        {"keywords": ["순찰"], "classification": "known_general", "answer": "21시 40분 무렵 서버실 복도를 순찰했고, 당시 복도에는 사람이 없었습니다."},
+        {"keywords": ["복사", "파일 내용"], "classification": "unknown", "answer": "보안 담당이라 PC에서 어떤 파일이 복사됐는지는 알지 못합니다."}
+      ],
+      "unknown_response": "출입 보안 업무 범위를 벗어난 내용이라 알 수 없습니다."
+    },
+    "오세린": {
+      "role": "대회 콘텐츠 담당",
+      "knows": ["마진우가 21시 전에 퇴근한다고 말함", "자신은 20:58에 퇴근함"],
+      "does_not_know": ["마진우가 실제로 어디로 갔는지", "정산 차액의 용도", "서버실 장치 로그"],
+      "directly_observed": ["20:55 마진우의 퇴근 발언"],
+      "heard_from_others": ["장예원이 장비 대여비를 결제함"],
+      "memory_limitations": ["마진우의 정확한 퇴근 분 단위 시각"],
+      "reveal_conditions": [],
+      "public_responses": [
+        {"keywords": ["퇴근한다고", "먼저 간다고"], "classification": "known_general", "answer": "마진우 씨가 21시 전에는 먼저 퇴근하겠다고 말한 것은 들었습니다."},
+        {"keywords": ["정확한 시각", "몇 분"], "classification": "memory_limitation", "answer": "그 말을 들은 정확한 분 단위 시각은 기억나지 않습니다."}
+      ],
+      "unknown_response": "제가 직접 확인한 일이 아니라 알 수 없습니다."
+    }
+  }
+}
+

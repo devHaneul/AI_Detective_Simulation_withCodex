@@ -1,0 +1,24 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_015",
+  "in_reply_to": "question_015",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "오세린",
+    "answer": "제가 퇴근하기 전에는 그 파일의 백업이나 외장 장치 반출 계획을 들은 바 없습니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05"
+    ]
+  }
+}

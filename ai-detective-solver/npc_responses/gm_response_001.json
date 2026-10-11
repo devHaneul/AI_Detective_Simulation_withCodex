@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_001",
+  "in_reply_to": "question_001",
+  "npc_response": {
+    "npc": "장예원",
+    "answer": "제가 직접 확인한 장비 대여비는 법인카드로 결제한 150,000원이며, 영수증도 제출했습니다. 그 밖의 추가 장비·현장 비용이나 별도 영수증, 지급 방식은 제가 확인한 내용이 아닙니다.",
+    "classification": "known_general",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}

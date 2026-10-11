@@ -1,0 +1,29 @@
+{
+  "type": "solver_question",
+  "question_id": "question_001",
+  "target_npc": "장예원",
+  "attached_evidence": [
+    "E01",
+    "E02"
+  ],
+  "grounding_note": "실제 장비 대여액 150,000원과 마진우의 정산 요청액 450,000원의 차액 근거를 확인한다.",
+  "relation": "amount_mismatch",
+  "fact_links": [
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_ACTUAL_150K",
+      "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+    },
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_VENDOR_REAL",
+      "claim": "실제 결제처는 한빛렌탈이다."
+    },
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_CLAIM_450K",
+      "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+    }
+  ],
+  "question": "E01에는 4월 28일 장비 대여 실결제액이 150,000원으로 기록되어 있는데, 마진우는 같은 장비 및 현장 비용으로 450,000원을 정산 요청했습니다. 두 금액 사이의 300,000원 차액에 해당하는 추가 장비·현장 비용이나 별도 영수증이 있었는지, 있었다면 언제 누구에게 어떤 방식으로 지급했는지 알고 계신가요?"
+}

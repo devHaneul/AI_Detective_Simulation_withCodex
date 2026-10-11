@@ -1,0 +1,1 @@
+{"question_id":"question_005","classification":"insufficient_grounding","answer":"세린 씨의 메모와 제시된 카드 기록만으로는 제가 실제로 출입했는지나 그 뒤 결선 데이터 또는 저장매체를 다뤘는지를 단정할 수 없습니다. 제시된 정보 범위를 넘어선 내용입니다.","matched_rule_id":null,"rationale":"선택 가능 규칙이 없고, 질문에는 U02에 필요한 E02 증거 번호가 직접 표기되지 않았으며 관계 유형도 actor_device_sequence으로 지정되어 있다. 데이터·저장매체 관련 전제는 공개 사실로 뒷받침되지 않는다."}

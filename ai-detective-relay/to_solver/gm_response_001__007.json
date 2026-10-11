@@ -1,0 +1,36 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_001",
+  "in_reply_to": "question_001",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "실제 장비 대여비가 150,000원이었던 것은 맞습니다. 제가 제출한 450,000원과 300,000원 차이가 있습니다. 당시에는 추가 촬영장비라고 적었지만, 지금 증빙을 제시하지 못하겠습니다.",
+    "classification": "fact_confirmed",
+    "established_facts": [
+      "F_MJ_ACKNOWLEDGED_300K_GAP"
+    ]
+  },
+  "newly_unlocked_evidence": [
+    {
+      "id": "E03",
+      "title": "서버실 출입카드 기록",
+      "content": "# E03 — 서버실 출입카드 기록\n\n시설 출입통제 서버 내보내기:\n\n- 일시: 4월 28일 **21:32:14**\n- 문: 서버실 동쪽 출입문\n- 카드 소유자: **마진우**\n- 결과: 출입 허가 / 문 열림\n- 무결성 검증: 정상\n\n",
+      "public_facts": [
+        {
+          "id": "F_E03_CARD_2132",
+          "statement": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ]
+    }
+  ],
+  "system_notification": "새 증거 E03가 공개되었습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03"
+    ]
+  }
+}

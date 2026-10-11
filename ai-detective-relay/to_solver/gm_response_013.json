@@ -1,0 +1,24 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_013",
+  "in_reply_to": "question_013",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "김민수",
+    "answer": "저는 21시 40분 무렵 서버실 복도를 순찰했고, 당시 복도에는 사람이 없었습니다. 그 외의 출입 기록이나 CCTV상 이동 여부는 직접 확인한 사실이 아닙니다.",
+    "classification": "known_general",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05"
+    ]
+  }
+}

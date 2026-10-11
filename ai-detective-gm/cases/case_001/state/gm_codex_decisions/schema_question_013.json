@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "question_id": {
+      "type": "string"
+    },
+    "classification": {
+      "type": "string",
+      "enum": [
+        "fact_confirmed",
+        "known_general",
+        "memory_limitation",
+        "unknown",
+        "insufficient_grounding"
+      ]
+    },
+    "answer": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200
+    },
+    "matched_rule_id": {
+      "enum": [
+        null
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200
+    }
+  },
+  "required": [
+    "question_id",
+    "classification",
+    "answer",
+    "matched_rule_id",
+    "rationale"
+  ]
+}

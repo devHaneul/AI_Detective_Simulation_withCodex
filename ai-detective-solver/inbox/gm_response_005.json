@@ -1,0 +1,22 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_005",
+  "in_reply_to": "question_005",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "세린 씨의 메모와 제시된 카드 기록만으로는 제가 실제로 출입했는지나 그 뒤 결선 데이터 또는 저장매체를 다뤘는지를 단정할 수 없습니다. 제시된 정보 범위를 넘어선 내용입니다.",
+    "classification": "insufficient_grounding",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03"
+    ]
+  }
+}

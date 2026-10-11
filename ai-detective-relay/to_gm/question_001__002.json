@@ -1,0 +1,29 @@
+{
+  "type": "solver_question",
+  "question_id": "question_001",
+  "target_npc": "마진우",
+  "attached_evidence": [
+    "E01",
+    "E02"
+  ],
+  "grounding_note": "E01은 4월 28일 한빛렌탈 장비의 실결제액이 150,000원이라고 기록하지만, E02의 같은 장비 정산 요청은 450,000원이다. 두 금액 사이에는 300,000원의 설명되지 않은 차액이 있고, E02는 요청자가 마진우였음을 보여준다.",
+  "relation": "amount_mismatch",
+  "fact_links": [
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_ACTUAL_150K",
+      "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+    },
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_VENDOR_REAL",
+      "claim": "실제 결제처는 한빛렌탈이다."
+    },
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_CLAIM_450K",
+      "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+    }
+  ],
+  "question": "한빛렌탈 영수증의 실제 결제액 150,000원과 같은 장비 정산으로 요청한 450,000원 사이의 300,000원 차액은 어떤 구체적인 비용이며, 그 금액을 뒷받침하는 영수증·거래처·승인 기록은 무엇입니까?"
+}

@@ -1,0 +1,35 @@
+{
+  "type": "solver_question",
+  "question_id": "question_014",
+  "target_npc": "마진우",
+  "attached_evidence": [
+    "E03",
+    "E04",
+    "E05"
+  ],
+  "grounding_note": "첨부 이유: E03은 마진우의 21:32:14 서버실 출입을, E04는 마진우 세션의 외장 SSD XSSD-4421 연결을, E05는 final_dataset.zip 복사를 확인하기 위해 사용한다. 증거 간 연결 이유: 마진우의 서버실 출입 직후 그의 세션에서 결선 데이터가 외장 SSD로 복사되었으므로, 이 복사가 누구의 지시·승인으로 이루어졌는지 확인해야 한다.",
+  "relation": "actor_device_sequence",
+  "fact_links": [
+    {
+      "evidence_id": "E03",
+      "fact_id": "F_E03_CARD_2132",
+      "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+    },
+    {
+      "evidence_id": "E04",
+      "fact_id": "F_E04_USB_2136",
+      "claim": "21:36 마진우 사용자 세션의 운영 PC에 외장 SSD가 연결되었다."
+    },
+    {
+      "evidence_id": "E04",
+      "fact_id": "F_E04_DEVICE_SERIAL",
+      "claim": "연결 장치 일련번호는 XSSD-4421이다."
+    },
+    {
+      "evidence_id": "E05",
+      "fact_id": "F_E05_DATASET_COPY",
+      "claim": "21:38 final_dataset.zip이 XSSD-4421로 복사되었다."
+    }
+  ],
+  "question": "E03~E05에 따르면 당신은 서버실에 출입한 뒤 자신의 세션에서 final_dataset.zip을 외장 SSD XSSD-4421로 복사했습니다. 이 복사를 지시하거나 승인한 사람은 누구이며, 복사 목적은 백업·전달·다른 업무 중 무엇이었습니까?"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_021",
+  "in_reply_to": "question_021",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "장예원",
+    "answer": "아니요. 저는 그 30만 원의 추가 비용이나 해당 계좌로의 지급을 사전에 승인하거나 보고받은 적이 없습니다.",
+    "classification": "known_general",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06"
+    ]
+  }
+}

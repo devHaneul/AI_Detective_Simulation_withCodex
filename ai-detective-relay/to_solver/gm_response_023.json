@@ -1,0 +1,25 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_023",
+  "in_reply_to": "question_023",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "장예원",
+    "answer": "제가 현장에서 확인한 실제 거래처는 호텔이었습니다. 해당 업체가 물품이나 용역을 제공했다는 계약서·발주서·영수증은 본 적이 없습니다.",
+    "classification": "known_general",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06"
+    ]
+  }
+}

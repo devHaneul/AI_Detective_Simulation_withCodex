@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_010",
+  "in_reply_to": "question_010",
+  "npc_response": {
+    "npc": "김민수",
+    "answer": "출입통제 기록의 보존과 확인 방식은 제 보안 업무 범위입니다. 다만 CCTV 영상, 서버 내부 보안 로그, 저장매체 반출입 기록의 관리 주체나 열람 가능 여부는 제가 확인할 수 있는 범위가 아닙니다.",
+    "classification": "known_general",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}

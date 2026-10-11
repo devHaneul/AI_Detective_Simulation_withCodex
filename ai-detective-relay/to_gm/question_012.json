@@ -1,0 +1,18 @@
+{
+  "type": "solver_question",
+  "question_id": "question_012",
+  "target_npc": "오세린",
+  "attached_evidence": [
+    "E05"
+  ],
+  "grounding_note": "근거: E05의 F_E05_DATASET_COPY는 final_dataset.zip이 마진우 사용자 세션에서 외장 SSD XSSD-4421로 복사되었다는 사실이다. 연결 관계: 결선 데이터가 외장 SSD로 복사된 사실은 확인됐지만, 그 복사가 정상 업무였는지와 누가 반출 권한을 가졌는지는 밝혀지지 않았다. 콘텐츠 담당자인 오세린에게 승인 절차와 마진우의 권한을 구체적으로 확인한다.",
+  "relation": "general",
+  "fact_links": [
+    {
+      "evidence_id": "E05",
+      "fact_id": "F_E05_DATASET_COPY",
+      "claim": "21:38 final_dataset.zip이 XSSD-4421로 복사되었다."
+    }
+  ],
+  "question": "E05에 기록된 final_dataset.zip은 대회 콘텐츠 담당자가 관리하는 결선 데이터로 보입니다. 이 파일을 외장 SSD로 복사해 행사장 밖으로 반출하는 것이 정상 절차였습니까? 정상 절차였다면 누가 승인할 권한을 가졌고, 마진우가 XSSD-4421로 복사할 권한이 있었습니까?"
+}

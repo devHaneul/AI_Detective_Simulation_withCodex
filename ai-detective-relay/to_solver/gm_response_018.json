@@ -1,0 +1,43 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_018",
+  "in_reply_to": "question_018",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "장치 연결 기록과 파일 감사 기록이 같은 XSSD-4421을 가리키는 이상 부인할 수 없습니다. 제가 그 장치에 final_dataset.zip을 복사했습니다.",
+    "classification": "fact_confirmed",
+    "established_facts": [
+      "F_MJ_ACKNOWLEDGED_DATASET_COPY"
+    ]
+  },
+  "newly_unlocked_evidence": [
+    {
+      "id": "E06",
+      "title": "정산 차액 송금 및 계좌 확인서",
+      "content": "# E06 — 정산 차액 송금 및 계좌 확인서\n\n- 송금액: **300,000원**\n- 수취인 표기: 다온기획\n- 송금 시각: 4월 29일 09:10\n- 거래처 등록 연락처: 마진우 개인 연락처와 일치\n- 계좌 실사용자 확인: **마진우**\n\n",
+      "public_facts": [
+        {
+          "id": "F_E06_TRANSFER_300K",
+          "statement": "정산 차액 300,000원이 다온기획 계좌로 송금되었다."
+        },
+        {
+          "id": "F_E06_ACCOUNT_MJ",
+          "statement": "다온기획 계좌의 실사용자는 마진우다."
+        }
+      ]
+    }
+  ],
+  "system_notification": "새 증거 E06가 공개되었습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06"
+    ]
+  }
+}

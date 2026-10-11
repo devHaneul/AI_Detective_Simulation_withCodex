@@ -1,0 +1,24 @@
+{
+  "type": "solver_question",
+  "question_id": "question_002",
+  "target_npc": "마진우",
+  "attached_evidence": [
+    "E01",
+    "E02"
+  ],
+  "grounding_note": "실제 장비 결제액 150,000원과 마진우가 요청한 같은 장비 정산액 450,000원 사이에 300,000원 차이가 있다. 차액의 사용처와 증빙이 공개되지 않았다.",
+  "relation": "amount_mismatch",
+  "fact_links": [
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_ACTUAL_150K",
+      "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+    },
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_CLAIM_450K",
+      "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+    }
+  ],
+  "question": "두 금액의 차액 300,000원은 무엇에 사용되었으며, 이를 입증하는 공개 가능한 영수증이나 승인 기록이 있습니까?"
+}

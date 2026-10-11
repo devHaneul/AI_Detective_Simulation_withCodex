@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "case_id": "case_001",
+  "title": "사라진 결선 데이터와 부풀린 정산서",
+  "public_briefing": "AI 대회 운영 종료 후 결선 데이터 관리와 장비 대여비 정산 과정에서 이상 징후가 발견되었습니다. 운영팀이 확보한 초기 자료를 검토하고 관계자들의 진술과 기록을 대조해 사건의 모든 증거를 찾아내세요.",
+  "truth": "대회 운영 회계 담당 마진우는 장비 대여비 150,000원을 450,000원으로 부풀려 청구했다. 이후 퇴근했다고 거짓말하고 21:32에 서버실로 돌아와 외장 SSD를 연결해 final_dataset.zip을 복사했다.",
+  "timeline": [
+    {"time": "18:10", "event": "장예원이 한빛렌탈에서 장비를 수령하고 법인카드로 150,000원을 결제했다."},
+    {"time": "20:48", "event": "마진우가 총 450,000원의 정산 요청서를 제출했다."},
+    {"time": "20:55", "event": "마진우가 오세린에게 먼저 퇴근한다고 말했다."},
+    {"time": "21:32", "event": "마진우 명의 출입카드로 서버실 문이 열렸다."},
+    {"time": "21:36", "event": "마진우 계정이 열린 운영 PC에 외장 SSD가 연결되었다."},
+    {"time": "21:38", "event": "final_dataset.zip이 외장 SSD로 복사되었다."},
+    {"time": "다음 날 09:10", "event": "정산 차액 300,000원이 마진우가 관리하는 유령업체 계좌로 송금된 사실이 확인되었다."}
+  ],
+  "person_actions": {
+    "마진우": ["정산 금액을 부풀림", "퇴근 시각을 거짓 진술", "서버실 재출입", "외장 SSD 연결", "결선 데이터 복사"],
+    "장예원": ["실제 장비 대여와 결제를 수행", "영수증을 운영팀에 제출"],
+    "김민수": ["보안 로그를 보존", "21:40 서버실 복도 순찰"],
+    "오세린": ["마진우의 퇴근 발언을 들음", "20:58 사무실에서 퇴근"]
+  },
+  "evidence_connections": [
+    {"facts": ["F_E01_ACTUAL_150K", "F_E02_CLAIM_450K"], "meaning": "같은 정산 건에 300,000원 차이가 있다."},
+    {"facts": ["F_E02_LEFT_BEFORE_21", "F_E03_CARD_2132"], "meaning": "마진우의 퇴근 진술과 재출입 기록이 모순된다."},
+    {"facts": ["F_E03_CARD_2132", "F_E04_USB_2136"], "meaning": "재출입 직후 마진우 세션의 PC에 저장장치가 연결되었다."},
+    {"facts": ["F_E04_USB_2136", "F_E05_DATASET_COPY"], "meaning": "외장 저장장치 연결과 결선 데이터 복사가 연속해서 발생했다."}
+  ],
+  "final_answer": {
+    "culprit": "마진우",
+    "acts": ["정산금 300,000원 편취", "final_dataset.zip 무단 복사"],
+    "required_reasoning": ["E01-E02 금액 교차검증", "E02-E03 퇴근 진술 교차검증", "E03-E04 사용자와 장치 연결", "E04-E05 장치와 파일 복사 연결", "E06 계좌 귀속 확인"]
+  },
+  "initial_evidence": ["E01", "E02"],
+  "public_npc_roster": [
+    {"name": "마진우", "role": "대회 운영 회계 담당"},
+    {"name": "장예원", "role": "현장 운영 담당"},
+    {"name": "김민수", "role": "시설 보안 담당"},
+    {"name": "오세린", "role": "대회 콘텐츠 담당"}
+  ],
+  "evidence_catalog": [
+    {
+      "id": "E01",
+      "title": "장비 대여 영수증",
+      "file": "E01.md",
+      "provenance": "한빛렌탈 발행 영수증 원본을 운영팀이 보관",
+      "public_facts": [
+        {"id": "F_E01_ACTUAL_150K", "statement": "4월 28일 장비 대여 실결제액은 150,000원이다."},
+        {"id": "F_E01_VENDOR_REAL", "statement": "실제 결제처는 한빛렌탈이다."}
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "마진우의 정산 요청과 퇴근 메모",
+      "file": "E02.md",
+      "provenance": "운영팀 전자결재 시스템과 오세린의 당일 업무 메모",
+      "public_facts": [
+        {"id": "F_E02_CLAIM_450K", "statement": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."},
+        {"id": "F_E02_LEFT_BEFORE_21", "statement": "마진우는 21시 전에 퇴근했다고 말했다."}
+      ]
+    },
+    {
+      "id": "E03",
+      "title": "서버실 출입카드 기록",
+      "file": "E03.md",
+      "provenance": "시설 출입통제 서버의 서명된 내보내기 기록",
+      "public_facts": [
+        {"id": "F_E03_CARD_2132", "statement": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."}
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "운영 PC 외장장치 로그",
+      "file": "E04.md",
+      "provenance": "운영 PC OS 장치 이벤트 로그",
+      "public_facts": [
+        {"id": "F_E04_USB_2136", "statement": "21:36 마진우 사용자 세션의 운영 PC에 외장 SSD가 연결되었다."},
+        {"id": "F_E04_DEVICE_SERIAL", "statement": "연결 장치 일련번호는 XSSD-4421이다."}
+      ]
+    },
+    {
+      "id": "E05",
+      "title": "파일 복사 감사 로그",
+      "file": "E05.md",
+      "provenance": "운영 PC 파일 감사 로그와 장치 일련번호 대조",
+      "public_facts": [
+        {"id": "F_E05_DATASET_COPY", "statement": "21:38 final_dataset.zip이 XSSD-4421로 복사되었다."}
+      ]
+    },
+    {
+      "id": "E06",
+      "title": "정산 차액 송금 및 계좌 확인서",
+      "file": "E06.md",
+      "provenance": "회계팀 이체 내역과 거래처 등록 서류 대조",
+      "public_facts": [
+        {"id": "F_E06_TRANSFER_300K", "statement": "정산 차액 300,000원이 다온기획 계좌로 송금되었다."},
+        {"id": "F_E06_ACCOUNT_MJ", "statement": "다온기획 계좌의 실사용자는 마진우다."}
+      ]
+    }
+  ]
+}

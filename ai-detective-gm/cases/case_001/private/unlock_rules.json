@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "immutable_after_start": true,
+  "rules": [
+    {
+      "id": "U01_AMOUNT_GAP",
+      "target_npc": "마진우",
+      "relation": "amount_mismatch",
+      "required_facts": ["F_E01_ACTUAL_150K", "F_E02_CLAIM_450K"],
+      "establishes_facts": ["F_MJ_ACKNOWLEDGED_300K_GAP"],
+      "npc_response": "실제 장비 대여비가 150,000원이었던 것은 맞습니다. 제가 제출한 450,000원과 300,000원 차이가 납니다. 당시에는 추가 현장비라고 적었지만 세부 증빙은 제시하지 못했습니다.",
+      "unlocks": ["E03"]
+    },
+    {
+      "id": "U02_REENTRY_CONTRADICTION",
+      "target_npc": "마진우",
+      "relation": "timeline_contradiction",
+      "required_facts": ["F_E02_LEFT_BEFORE_21", "F_E03_CARD_2132"],
+      "establishes_facts": ["F_MJ_REENTERED_AFTER_CLAIMED_EXIT"],
+      "npc_response": "네. 먼저 퇴근한다고 말한 뒤 21시 32분에 다시 서버실로 돌아왔습니다. 출입카드를 다른 사람에게 빌려준 것은 아닙니다.",
+      "unlocks": ["E04"]
+    },
+    {
+      "id": "U03_DEVICE_CONNECTION",
+      "target_npc": "마진우",
+      "relation": "actor_device_sequence",
+      "required_facts": ["F_E03_CARD_2132", "F_E04_USB_2136"],
+      "establishes_facts": ["F_MJ_ACKNOWLEDGED_DEVICE"],
+      "npc_response": "재입실 직후 제 사용자 세션이 열린 운영 PC에 외장 SSD를 연결한 것은 맞습니다. 그 질문 범위를 넘어 무엇을 했는지는 이 답변에서 덧붙이지 않겠습니다.",
+      "unlocks": ["E05"]
+    },
+    {
+      "id": "U04_FILE_COPY",
+      "target_npc": "마진우",
+      "relation": "device_file_sequence",
+      "required_facts": ["F_E04_USB_2136", "F_E05_DATASET_COPY"],
+      "establishes_facts": ["F_MJ_ACKNOWLEDGED_DATASET_COPY"],
+      "npc_response": "장치 일련번호와 파일 감사 기록이 연결되는 점은 부인할 수 없습니다. 제가 XSSD-4421에 final_dataset.zip을 복사했습니다.",
+      "unlocks": ["E06"]
+    }
+  ]
+}

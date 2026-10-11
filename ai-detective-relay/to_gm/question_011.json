@@ -1,0 +1,35 @@
+{
+  "type": "solver_question",
+  "question_id": "question_011",
+  "target_npc": "마진우",
+  "attached_evidence": [
+    "E03",
+    "E04",
+    "E05"
+  ],
+  "grounding_note": "근거: E03은 21:32:14 마진우 명의 카드로 서버실에 출입한 사실을, E04는 마진우 세션에 외장 SSD XSSD-4421이 연결된 사실을, E05는 final_dataset.zip이 해당 SSD로 복사된 사실을 보여준다. 연결 관계: 서버실 출입 직후 결선 데이터가 외장 SSD로 복사되었으므로, 복사 후 SSD와 파일의 행방이 미확인이다.",
+  "relation": "actor_device_sequence",
+  "fact_links": [
+    {
+      "evidence_id": "E03",
+      "fact_id": "F_E03_CARD_2132",
+      "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+    },
+    {
+      "evidence_id": "E04",
+      "fact_id": "F_E04_USB_2136",
+      "claim": "21:36 마진우 사용자 세션의 운영 PC에 외장 SSD가 연결되었다."
+    },
+    {
+      "evidence_id": "E04",
+      "fact_id": "F_E04_DEVICE_SERIAL",
+      "claim": "연결 장치 일련번호는 XSSD-4421이다."
+    },
+    {
+      "evidence_id": "E05",
+      "fact_id": "F_E05_DATASET_COPY",
+      "claim": "21:38 final_dataset.zip이 XSSD-4421로 복사되었다."
+    }
+  ],
+  "question": "E05에 따르면 21:38:04부터 21:38:19 사이 final_dataset.zip이 외장 SSD XSSD-4421로 복사되었습니다. 복사가 끝난 뒤 그 SSD와 파일을 어디에 보관했거나 누구에게 전달했습니까?"
+}

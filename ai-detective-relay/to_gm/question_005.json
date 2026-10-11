@@ -1,0 +1,18 @@
+{
+  "type": "solver_question",
+  "question_id": "question_005",
+  "target_npc": "오세린",
+  "attached_evidence": [
+    "E02"
+  ],
+  "grounding_note": "오세린의 업무 메모에는 20:55 무렵 마진우가 21시 전에 먼저 퇴근한다고 말했다고 적혀 있다. 이 메모의 직접 관찰 경위와 실제 퇴근 여부가 확인되지 않았다.",
+  "relation": "timeline_contradiction",
+  "fact_links": [
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_LEFT_BEFORE_21",
+      "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+    }
+  ],
+  "question": "20:55 무렵 마진우의 21시 전 퇴근 발언을 직접 들었습니까? 그때 마진우가 있던 장소와 이후 실제로 떠나는 모습을 확인했는지 알려주십시오."
+}

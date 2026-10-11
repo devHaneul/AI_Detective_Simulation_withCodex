@@ -1,0 +1,24 @@
+{
+  "type": "solver_question",
+  "question_id": "question_015",
+  "target_npc": "장예원",
+  "attached_evidence": [
+    "E01",
+    "E02"
+  ],
+  "grounding_note": "E01의 실제 결제액과 E02의 정산 요청액을 원문 그대로 짧게 인용하고 300,000원 금액 모순의 추가 비용 존재 여부를 확인한다.",
+  "relation": "amount_mismatch",
+  "fact_links": [
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_ACTUAL_150K",
+      "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+    },
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_CLAIM_450K",
+      "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+    }
+  ],
+  "question": "E01 — ‘결제액: 150,000원.’ E02 — ‘요청액: 450,000원.’ E01의 실제 결제액과 E02의 정산 요청액 사이에는 300,000원의 차이가 있습니다. 귀하는 E01의 150,000원 결제와 영수증 제출은 확인했지만, 이 차액에 해당하는 추가 장비·현장 비용이나 별도 결제가 실제로 있었는지 확인한 적이 있습니까?"
+}

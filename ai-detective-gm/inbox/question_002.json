@@ -1,0 +1,29 @@
+{
+  "type": "solver_question",
+  "question_id": "question_002",
+  "target_npc": "마진우",
+  "attached_evidence": [
+    "E01",
+    "E02"
+  ],
+  "grounding_note": "정산 요청 작성자에게 실제 결제액과 요청액 사이 300,000원 차액의 항목 및 증빙을 확인한다.",
+  "relation": "amount_mismatch",
+  "fact_links": [
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_ACTUAL_150K",
+      "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+    },
+    {
+      "evidence_id": "E01",
+      "fact_id": "F_E01_VENDOR_REAL",
+      "claim": "실제 결제처는 한빛렌탈이다."
+    },
+    {
+      "evidence_id": "E02",
+      "fact_id": "F_E02_CLAIM_450K",
+      "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+    }
+  ],
+  "question": "E01의 한빛렌탈 장비 대여 실결제액은 150,000원인데, 귀하는 E02에서 같은 장비 및 현장 비용으로 450,000원을 요청했습니다. 300,000원의 차액은 어떤 항목과 증빙을 근거로 산정했으며, 추가 비용이 실제로 지급되었다면 지급처·지급 시각·영수증 또는 결재 기록을 제시할 수 있습니까?"
+}

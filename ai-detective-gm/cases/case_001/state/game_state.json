@@ -1,0 +1,564 @@
+{
+  "case_id": "case_001",
+  "ground_truth_locked": true,
+  "unlocked_evidence": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "established_facts": [
+    "F_E01_ACTUAL_150K",
+    "F_E01_VENDOR_REAL",
+    "F_E02_CLAIM_450K",
+    "F_E02_LEFT_BEFORE_21",
+    "F_MJ_ACKNOWLEDGED_300K_GAP",
+    "F_E03_CARD_2132"
+  ],
+  "npc_interactions": [
+    {
+      "npc": "장예원",
+      "question_id": "question_001",
+      "response_id": "gm_response_001"
+    },
+    {
+      "npc": "마진우",
+      "question_id": "question_002",
+      "response_id": "gm_response_002"
+    },
+    {
+      "npc": "김민수",
+      "question_id": "question_003",
+      "response_id": "gm_response_003"
+    },
+    {
+      "npc": "오세린",
+      "question_id": "question_004",
+      "response_id": "gm_response_004"
+    },
+    {
+      "npc": "마진우",
+      "question_id": "question_005",
+      "response_id": "gm_response_005"
+    },
+    {
+      "npc": "마진우",
+      "question_id": "question_006",
+      "response_id": "gm_response_006"
+    },
+    {
+      "npc": "김민수",
+      "question_id": "question_007",
+      "response_id": "gm_response_007"
+    },
+    {
+      "npc": "장예원",
+      "question_id": "question_008",
+      "response_id": "gm_response_008"
+    },
+    {
+      "npc": "오세린",
+      "question_id": "question_009",
+      "response_id": "gm_response_009"
+    },
+    {
+      "npc": "김민수",
+      "question_id": "question_010",
+      "response_id": "gm_response_010"
+    },
+    {
+      "npc": "마진우",
+      "question_id": "question_011",
+      "response_id": "gm_response_011"
+    },
+    {
+      "npc": "김민수",
+      "question_id": "question_012",
+      "response_id": "gm_response_012"
+    },
+    {
+      "npc": "마진우",
+      "question_id": "question_013",
+      "response_id": "gm_response_013"
+    },
+    {
+      "npc": "김민수",
+      "question_id": "question_014",
+      "response_id": "gm_response_014"
+    },
+    {
+      "npc": "장예원",
+      "question_id": "question_015",
+      "response_id": "gm_response_015"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "question_001",
+      "target_npc": "장예원",
+      "attached_evidence": [
+        "E01",
+        "E02"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E01",
+          "fact_id": "F_E01_ACTUAL_150K",
+          "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+        },
+        {
+          "evidence_id": "E01",
+          "fact_id": "F_E01_VENDOR_REAL",
+          "claim": "실제 결제처는 한빛렌탈이다."
+        },
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_CLAIM_450K",
+          "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+        }
+      ],
+      "relation": "amount_mismatch",
+      "question": "E01에는 4월 28일 장비 대여 실결제액이 150,000원으로 기록되어 있는데, 마진우는 같은 장비 및 현장 비용으로 450,000원을 정산 요청했습니다. 두 금액 사이의 300,000원 차액에 해당하는 추가 장비·현장 비용이나 별도 영수증이 있었는지, 있었다면 언제 누구에게 어떤 방식으로 지급했는지 알고 계신가요?",
+      "classification": "known_general",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_002",
+      "target_npc": "마진우",
+      "attached_evidence": [
+        "E01",
+        "E02"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E01",
+          "fact_id": "F_E01_ACTUAL_150K",
+          "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+        },
+        {
+          "evidence_id": "E01",
+          "fact_id": "F_E01_VENDOR_REAL",
+          "claim": "실제 결제처는 한빛렌탈이다."
+        },
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_CLAIM_450K",
+          "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+        }
+      ],
+      "relation": "amount_mismatch",
+      "question": "E01의 한빛렌탈 장비 대여 실결제액은 150,000원인데, 귀하는 E02에서 같은 장비 및 현장 비용으로 450,000원을 요청했습니다. 300,000원의 차액은 어떤 항목과 증빙을 근거로 산정했으며, 추가 비용이 실제로 지급되었다면 지급처·지급 시각·영수증 또는 결재 기록을 제시할 수 있습니까?",
+      "classification": "fact_confirmed",
+      "decided_by": "codex",
+      "matched_rule_id": "U01_AMOUNT_GAP"
+    },
+    {
+      "question_id": "question_003",
+      "target_npc": "김민수",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "timeline_contradiction",
+      "question": "E02에는 마진우가 21시 전에 퇴근한다고 말했다고 기록되어 있지만, E03에는 4월 28일 21:32:14에 마진우 명의 카드로 서버실 동쪽 출입문이 열린 기록이 있습니다. 해당 출입이 실제 마진우의 출입인지, 당시 서버실에서 어떤 작업이나 장비·저장매체 반출입이 있었는지 확인해 주실 수 있습니까?",
+      "classification": "unknown",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_004",
+      "target_npc": "오세린",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "device_file_sequence",
+      "question": "당신의 메모에는 마진우가 20:55 무렵 21시 전에 퇴근한다고 말했다고 되어 있지만, E03에는 21:32:14에 마진우 명의 카드로 서버실 문이 열린 기록이 있습니다. 그 사이 마진우가 결선 데이터나 서버실 작업에 대해 언급한 적이 있었는지, 그리고 당시 결선 데이터의 보관·접근 상태를 알고 계신가요?",
+      "classification": "known_general",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_005",
+      "target_npc": "마진우",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "actor_device_sequence",
+      "question": "오세린의 메모에는 귀하가 21시 전에 퇴근한다고 말한 것으로 기록되어 있지만, E03에는 21:32:14에 귀하 명의 카드로 서버실에 출입한 기록이 있습니다. 21시 이후 서버실에 들어간 사실이 있습니까? 있었다면 출입 목적과 결선 데이터 또는 저장매체를 열람·복사·이동했는지, 그리고 왜 퇴근한다고 말했는지 설명해 주십시오.",
+      "classification": "insufficient_grounding",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_006",
+      "target_npc": "마진우",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "actor_device_sequence",
+      "question": "E02의 ‘오세린 업무 메모’에는 4월 28일 20:55 무렵 귀하가 ‘21시 전에 먼저 퇴근한다’고 말했다고 기록되어 있습니다. 그러나 E03의 ‘서버실 출입카드 기록’에는 같은 날 21:32:14에 귀하 명의 카드로 서버실 동쪽 출입문이 열렸고, 출입 결과가 ‘출입 허가 / 문 열림’으로 기록되어 있습니다. 이 두 기록이 함께 존재하는데도 귀하는 21시 이후 서버실에 들어가지 않았습니까? 들어갔다면 출입 목적, 결선 데이터나 저장매체의 열람·복사·이동 여부, 그리고 퇴근한다고 말한 이유를 설명해 주십시오.",
+      "classification": "insufficient_grounding",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_007",
+      "target_npc": "김민수",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "general",
+      "question": "E03 ‘서버실 출입카드 기록’의 ‘일시: 4월 28일 21:32:14’, ‘카드 소유자: 마진우’, ‘결과: 출입 허가 / 문 열림’, ‘무결성 검증: 정상’ 부분을 확인해 주십시오. E02 ‘마진우의 정산 요청과 퇴근 메모’의 ‘20:55 무렵 21시 전에 먼저 퇴근한다고 말함’이라는 기록과 대조할 때, 보안 시스템에 해당 시각의 CCTV 영상, 출입구 주변 기록, 동반 출입자 기록 또는 서버실 출입 후 퇴실 기록이 남아 있습니까? 있다면 실제 출입자와 체류 시간, 반출입 물품을 확인할 수 있습니까?",
+      "classification": "unknown",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_008",
+      "target_npc": "장예원",
+      "attached_evidence": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E01",
+          "fact_id": "F_E01_ACTUAL_150K",
+          "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+        },
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "actor_device_sequence",
+      "question": "E01 ‘장비 대여 영수증’의 ‘결제자: 장예원(법인카드)’ 및 ‘결제일: 4월 28일 18:10’ 부분, E02 ‘오세린의 업무 메모’의 ‘20:55 무렵 마진우가 21시 전에 먼저 퇴근한다고 말함’ 부분, E03 ‘서버실 출입카드 기록’의 ‘21:32:14 마진우 명의 카드로 서버실 동쪽 출입문 출입 허가’ 부분을 함께 확인해 주십시오. 귀하는 21시 전후 마진우가 실제로 현장을 떠나는 것을 보았습니까? 마진우의 출입카드를 다른 사람이 사용할 수 있었거나, 그가 서버실에 들어갈 이유를 알고 있습니까?",
+      "classification": "known_general",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_009",
+      "target_npc": "오세린",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "device_file_sequence",
+      "question": "E02 ‘오세린의 업무 메모’에는 마진우가 20:55 무렵 21시 전에 퇴근한다고 말했다고 기록되어 있고, E03 ‘서버실 출입카드 기록’에는 21:32:14에 마진우 명의 카드로 서버실 동쪽 문이 열렸다고 기록되어 있습니다. 귀하는 20:58에 퇴근했다고 답변했습니다. 귀하가 관리하거나 확인할 수 있는 결선 자료에서 그날 파일 생성·수정·복사·삭제·외부 저장 기록, 결선 데이터 보관 위치 변경, 또는 접근 권한 변경이 있었는지 알고 있습니까?",
+      "classification": "unknown",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_010",
+      "target_npc": "김민수",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "general",
+      "question": "E03 ‘서버실 출입카드 기록’의 ‘일시: 4월 28일 21:32:14’, ‘카드 소유자: 마진우’, ‘결과: 출입 허가 / 문 열림’, ‘무결성 검증: 정상’ 부분에 대해 묻습니다. E02 ‘오세린의 업무 메모’에는 마진우가 20:55 무렵 21시 전에 퇴근한다고 말했다고 기록되어 있습니다. 두 기록의 진위를 확인하려면 해당 시각의 CCTV 영상, 출입 후 퇴실 로그, 서버실 내부 보안 로그 또는 저장매체 반출입 기록 중 어떤 자료를 확인해야 하며, 그 자료를 관리하거나 열람할 수 있는 담당자는 누구입니까?",
+      "classification": "known_general",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_011",
+      "target_npc": "마진우",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "actor_device_sequence",
+      "question": "E02 — ‘20:55 무렵 마진우가 오늘은 21시 전에 먼저 퇴근한다고 말함.’ E03 — ‘일시: 4월 28일 21:32:14 / 카드 소유자: 마진우 / 결과: 출입 허가 / 문 열림’ E02의 퇴근 발언과 E03의 21시 32분 마진우 명의 서버실 출입 기록은 서로 모순됩니다. 21시 이후 서버실에 직접 들어갔습니까? 직접 들어가지 않았다면 누가 카드를 사용했으며, 카드 사용 사실을 언제 알았습니까?",
+      "classification": "insufficient_grounding",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_012",
+      "target_npc": "김민수",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_LEFT_BEFORE_21",
+          "claim": "마진우는 21시 전에 퇴근했다고 말했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "timeline_contradiction",
+      "question": "E02 — ‘21시 전에 먼저 퇴근한다고 말함.’ E03 — ‘카드 소유자: 마진우 / 결과: 출입 허가 / 문 열림’ E02의 퇴근 발언과 E03의 마진우 명의 카드 출입은 모순됩니다. E03의 ‘카드 소유자’가 실제 출입자를 뜻하지 않고 카드 등록 명의만 뜻하는지, 또는 해당 카드가 다른 사람에게 대여·공유될 수 있는지 확인해 주십시오. 또한 이 출입 기록에서 실제 출입자를 특정할 수 있는 별도 항목이 있습니까?",
+      "classification": "unknown",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_013",
+      "target_npc": "마진우",
+      "attached_evidence": [
+        "E02",
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_CLAIM_450K",
+          "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+        },
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "actor_device_sequence",
+      "question": "E02 — ‘요청액: 450,000원.’ E03 — ‘21:32:14 / 카드 소유자: 마진우 / 출입 허가 / 문 열림’ E02의 450,000원 정산 요청과 E03의 21시 32분 서버실 출입 기록이 모두 귀하와 연결되어 있지만, 귀하는 앞서 300,000원 차액의 별도 증빙을 제시하지 못했습니다. 서버실 출입이 그 추가 현장비와 관련된 작업이었습니까? 그렇다면 어떤 작업과 비용이 연결되는지 설명하고, 아니라면 두 사건이 무관하다는 근거를 제시해 주십시오.",
+      "classification": "insufficient_grounding",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_014",
+      "target_npc": "김민수",
+      "attached_evidence": [
+        "E03"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E03",
+          "fact_id": "F_E03_CARD_2132",
+          "claim": "4월 28일 21:32에 마진우 명의 카드로 서버실 문이 열렸다."
+        }
+      ],
+      "relation": "general",
+      "question": "E03 — ‘일시: 4월 28일 21:32:14 / 카드 소유자: 마진우 / 결과: 출입 허가 / 문 열림 / 무결성 검증: 정상’ 이 E03 기록에 대응하는 서버실 퇴실 시각, 재출입 기록, 같은 카드의 추가 사용 기록이 출입통제 시스템에 남아 있습니까? 남아 있다면 해당 기록을 확인할 수 있습니까?",
+      "classification": "unknown",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    },
+    {
+      "question_id": "question_015",
+      "target_npc": "장예원",
+      "attached_evidence": [
+        "E01",
+        "E02"
+      ],
+      "fact_links": [
+        {
+          "evidence_id": "E01",
+          "fact_id": "F_E01_ACTUAL_150K",
+          "claim": "4월 28일 장비 대여 실결제액은 150,000원이다."
+        },
+        {
+          "evidence_id": "E02",
+          "fact_id": "F_E02_CLAIM_450K",
+          "claim": "마진우는 같은 장비 정산 건으로 450,000원을 요청했다."
+        }
+      ],
+      "relation": "amount_mismatch",
+      "question": "E01 — ‘결제액: 150,000원.’ E02 — ‘요청액: 450,000원.’ E01의 실제 결제액과 E02의 정산 요청액 사이에는 300,000원의 차이가 있습니다. 귀하는 E01의 150,000원 결제와 영수증 제출은 확인했지만, 이 차액에 해당하는 추가 장비·현장 비용이나 별도 결제가 실제로 있었는지 확인한 적이 있습니까?",
+      "classification": "known_general",
+      "decided_by": "codex",
+      "matched_rule_id": null
+    }
+  ],
+  "dead_ends": [
+    {
+      "signature": "88a912aa8fe1b5e420c4cd439a3e2b928bf615a53742f7462f874bec1fe8e863",
+      "classification": "known_general",
+      "answer": "제가 직접 확인한 장비 대여비는 법인카드로 결제한 150,000원이며, 영수증도 제출했습니다. 그 밖의 추가 장비·현장 비용이나 별도 영수증, 지급 방식은 제가 확인한 내용이 아닙니다."
+    },
+    {
+      "signature": "3cad5f792266075493da15cb2141baa0eae3ec5557ee1981c0c286b3e8be5247",
+      "classification": "unknown",
+      "answer": "출입 기록상 해당 시각에 그 명의의 카드로 문이 열렸다는 점은 확인할 수 있습니다. 다만 저는 그 순간의 실제 출입자를 직접 보지 못했고, 서버실 안에서 어떤 작업이나 저장매체 반출입이 있었는지는 알지 못합니다."
+    },
+    {
+      "signature": "ff73617cb28360a321ad933a185cc9957dfff63b5f7e6fde85b78822137a817f",
+      "classification": "known_general",
+      "answer": "저는 마진 씨가 21시 전에 먼저 퇴근하겠다고 말한 것은 들었습니다. 다만 저는 20시 58분에 퇴근했기 때문에, 그 뒤 마진 씨가 서버실에서 무엇을 했는지나 결선 데이터의 보관·반출 상태는 알지 못합니다."
+    },
+    {
+      "signature": "de2c59ba39e0e6bc87b92fb12c37d938670a0289e9e8309b48bc30330f91476f",
+      "classification": "insufficient_grounding",
+      "answer": "세린 씨의 메모와 제시된 카드 기록만으로는 제가 실제로 출입했는지나 그 뒤 결선 데이터 또는 저장매체를 다뤘는지를 단정할 수 없습니다. 제시된 정보 범위를 넘어선 내용입니다."
+    },
+    {
+      "signature": "41f41fa7b8da82048533b1bfe8c8ffe126a0f4fb8cc07bfb7c8e1737e7932ba6",
+      "classification": "insufficient_grounding",
+      "answer": "제시된 두 기록만으로는 서버실 출입 뒤 결선 데이터나 저장매체를 열람·복사·이동했다는 점까지 확인할 수 없습니다. 그 부분은 별도의 확인 가능한 기록이 필요합니다."
+    },
+    {
+      "signature": "80ccefa6a8683a450b67122d1ada734eb730a5706de55647f0c7d7a7e25449f4",
+      "classification": "unknown",
+      "answer": "제가 확인할 수 있는 범위는 출입통제 기록의 보존 방식입니다. 해당 시각의 CCTV, 동반 출입자, 체류 시간이나 반출 물품을 확인할 수 있는 기록이 있는지는 제 업무 범위에서 알지 못합니다."
+    },
+    {
+      "signature": "a481acbd38b37b9e4f47962285fa13c004c0dcfbcde981f2dca0dd51ef9ff4f4",
+      "classification": "known_general",
+      "answer": "장비 대여비 150,000원은 제가 법인카드로 결제했고 영수증을 제출했습니다. 다만 저는 마진 씨가 21시 전후 실제로 떠나는 장면을 보지 못했고, 그의 출입카드를 다른 사람이 사용할 수 있었는지나 서버실 출입 이유도 알지 못합니다."
+    },
+    {
+      "signature": "a7ed5c4627efade4aef2a277add04e624409a3756ed824bbbb92465fb0b60ea9",
+      "classification": "unknown",
+      "answer": "저는 20시 58분에 퇴근했으며, 이후 결선 자료의 파일 작업 기록이나 보관 위치·접근 권한 변경 내역은 확인하지 못했습니다. 그 기록들에 대해서는 알지 못합니다."
+    },
+    {
+      "signature": "3a9b0b69f7cbe82c708e1bff34ad56093f6339e3c41154f483cca9711e50d16d",
+      "classification": "known_general",
+      "answer": "출입통제 기록의 보존과 확인 방식은 제 보안 업무 범위입니다. 다만 CCTV 영상, 서버 내부 보안 로그, 저장매체 반출입 기록의 관리 주체나 열람 가능 여부는 제가 확인할 수 있는 범위가 아닙니다."
+    },
+    {
+      "signature": "90962dc624314ff2747df39e31b3269d5147078fb93a099f5cc1967b4af28713",
+      "classification": "insufficient_grounding",
+      "answer": "제시된 퇴근 발언과 카드 기록만으로는 실제 출입자나 카드 사용 경위를 단정할 수 없습니다. 그 부분은 별도의 확인 가능한 기록이 있어야 판단할 수 있습니다."
+    },
+    {
+      "signature": "708c9863972db42204c5da095f60b6d8b9fd82323603d35c3a24296b1e0fa112",
+      "classification": "unknown",
+      "answer": "저는 출입통제 기록의 보존 방식만 알고 있습니다. 카드 소유자 표기가 실제 출입자까지 뜻하는지, 카드 대여·공유 가능 여부나 실제 출입자를 특정하는 별도 항목이 있는지는 제가 확인할 수 있는 범위가 아닙니다."
+    },
+    {
+      "signature": "cbfb1000a6b8f454e625f1e529c1fa00ecc6a0bfd78b1038262eb62a773cb8fe",
+      "classification": "insufficient_grounding",
+      "answer": "정산 요청과 출입 기록만으로 서버실 출입이 추가 현장비와 관련됐다고 볼 근거는 없습니다. 두 사실의 관련 여부는 제시된 정보만으로 판단할 수 없습니다."
+    },
+    {
+      "signature": "7798641e4b89c677f35596b60cbd0ce87fed287b28ce2ac773b6518e42c17231",
+      "classification": "unknown",
+      "answer": "출입통제 기록의 보존 방식은 알고 있지만, 해당 출입에 대응하는 퇴실·재출입·추가 카드 사용 기록이 남아 있는지와 그 내용을 제가 확인할 수 있는지는 알지 못합니다."
+    },
+    {
+      "signature": "cb922db93e9e0a192969b4c16751c4073825b9d6b7df67b85f65a7cbeab2e4cb",
+      "classification": "known_general",
+      "answer": "제가 직접 확인한 것은 150,000원 결제와 영수증 제출뿐입니다. 차액에 해당하는 추가 장비·현장 비용이나 별도 결제가 실제로 있었는지는 확인한 적이 없어 알지 못합니다."
+    }
+  ],
+  "unlock_history": [
+    {
+      "rule_id": "U01_AMOUNT_GAP",
+      "question_id": "question_002",
+      "unlocked": [
+        "E03"
+      ],
+      "decided_by": "codex"
+    }
+  ],
+  "next_response_number": 16
+}

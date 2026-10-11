@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_008",
+  "in_reply_to": "question_008",
+  "npc_response": {
+    "npc": "장예원",
+    "answer": "장비 대여비 150,000원은 제가 법인카드로 결제했고 영수증을 제출했습니다. 다만 저는 마진 씨가 21시 전후 실제로 떠나는 장면을 보지 못했고, 그의 출입카드를 다른 사람이 사용할 수 있었는지나 서버실 출입 이유도 알지 못합니다.",
+    "classification": "known_general",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}

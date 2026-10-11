@@ -1,0 +1,25 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_020",
+  "in_reply_to": "question_020",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "마진우",
+    "answer": "그 30만 원 이체의 집행·승인 과정이나 전자결재 기록의 정확한 시각은 기억하지 못합니다. 제시할 수 있는 별도 기록도 없습니다.",
+    "classification": "memory_limitation",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06"
+    ]
+  }
+}

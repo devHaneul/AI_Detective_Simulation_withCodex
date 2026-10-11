@@ -1,0 +1,18 @@
+{
+  "type": "solver_question",
+  "question_id": "question_015",
+  "target_npc": "오세린",
+  "attached_evidence": [
+    "E05"
+  ],
+  "grounding_note": "첨부 이유: E05는 final_dataset.zip이 21:38에 외장 SSD로 복사된 사실을 확인하기 위해 사용한다. 증거 연결 이유: 오세린은 콘텐츠 담당자였고 20:58에 퇴근했으므로, 그 시점에 결선 데이터의 예정된 백업·반출 계획이 있었는지 확인하면 21:38 복사가 정상 절차였는지 판단할 수 있다.",
+  "relation": "general",
+  "fact_links": [
+    {
+      "evidence_id": "E05",
+      "fact_id": "F_E05_DATASET_COPY",
+      "claim": "21:38 final_dataset.zip이 XSSD-4421로 복사되었다."
+    }
+  ],
+  "question": "E05에는 21:38에 final_dataset.zip이 외장 SSD로 복사된 기록이 있습니다. 당신이 20:58쯤 퇴근하기 전에 이 파일에 대해 예정된 백업이나 외장 장치 반출 계획을 들었습니까? 들었다면 누가 언제 어떤 방식으로 승인했다고 알고 있습니까?"
+}

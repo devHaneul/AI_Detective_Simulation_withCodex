@@ -1,0 +1,22 @@
+{
+  "type": "gm_public_packet",
+  "case_id": "case_001",
+  "response_id": "gm_response_003",
+  "in_reply_to": "question_003",
+  "npc_roster": [],
+  "npc_response": {
+    "npc": "오세린",
+    "answer": "저는 20시 58분쯤 퇴근했고, 그 뒤 결선 데이터의 최종 상태나 변경 여부는 직접 확인하지 못했습니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다.",
+  "public_state": {
+    "unlocked_evidence": [
+      "E01",
+      "E02",
+      "E03"
+    ]
+  }
+}

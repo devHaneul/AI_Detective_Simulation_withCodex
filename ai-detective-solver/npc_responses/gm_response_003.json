@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_003",
+  "in_reply_to": "question_003",
+  "npc_response": {
+    "npc": "김민수",
+    "answer": "출입 기록상 해당 시각에 그 명의의 카드로 문이 열렸다는 점은 확인할 수 있습니다. 다만 저는 그 순간의 실제 출입자를 직접 보지 못했고, 서버실 안에서 어떤 작업이나 저장매체 반출입이 있었는지는 알지 못합니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}

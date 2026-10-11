@@ -1,0 +1,12 @@
+{
+  "response_id": "gm_response_014",
+  "in_reply_to": "question_014",
+  "npc_response": {
+    "npc": "김민수",
+    "answer": "출입통제 기록의 보존 방식은 알고 있지만, 해당 출입에 대응하는 퇴실·재출입·추가 카드 사용 기록이 남아 있는지와 그 내용을 제가 확인할 수 있는지는 알지 못합니다.",
+    "classification": "unknown",
+    "established_facts": []
+  },
+  "newly_unlocked_evidence": [],
+  "system_notification": "새로 공개된 증거가 없습니다."
+}
